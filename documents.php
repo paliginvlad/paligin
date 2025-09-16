@@ -158,42 +158,5 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script>
-        function downloadDocument(filename) {
-            // Professional feedback for document requests
-            const modal = document.createElement('div');
-            modal.style.cssText = `
-                position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
-                background: rgba(0,0,0,0.5); z-index: 2000; display: flex; 
-                align-items: center; justify-content: center;
-            `;
-            
-            const content = document.createElement('div');
-            content.style.cssText = `
-                background: white; padding: 2rem; border-radius: 10px; 
-                max-width: 500px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-            `;
-            
-            content.innerHTML = `
-                <h3 style="color: #FF6B35; margin-bottom: 1rem;">Запит документа</h3>
-                <p style="margin-bottom: 1.5rem; line-height: 1.6;">
-                    Для отримання документа "${filename}" зверніться до офісу приватного виконавця 
-                    або надішліть запит електронною поштою.
-                </p>
-                <button onclick="this.parentElement.parentElement.remove()" 
-                        style="background: #FF6B35; color: white; border: none; 
-                               padding: 0.8rem 2rem; border-radius: 5px; cursor: pointer;">
-                    Зрозуміло
-                </button>
-            `;
-            
-            modal.appendChild(content);
-            document.body.appendChild(modal);
-            
-            modal.onclick = function(e) {
-                if (e.target === modal) modal.remove();
-            };
-        }
-    </script>
 </body>
 </html>
