@@ -4,53 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Приватний виконавець Палігін Олександр Петрович</title>
+    <link rel="preload" href="assets/fonts/TildaSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/TildaSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <img src="assets/images/logo.png" alt="Логотип" class="logo">
-                    <span class="nav-title">Палігін Олександр Петрович</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.php" class="nav-link">Головна</a></li>
-                    <li><a href="links.php" class="nav-link">Корисні посилання</a></li>
-                    <li><a href="documents.php" class="nav-link">Документи</a></li>
-                    <li><a href="publications.php" class="nav-link">Публікації</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <?php include 'includes/header.php'; ?>
 
     <main>
         <!-- Hero Section -->
         <section class="hero" style="background-image: url('assets/images/tie.jpg');">
-            <div class="hero-overlay">
-                <div class="hero-content">
-                    <h1>Приватний виконавець</h1>
-                    <h2>Палігін Олександр Петрович</h2>
-                    <p class="hero-slogan">Цінуємо Ваш час, працюємо на результат</p>
-                </div>
+            <div class="hero-orange-overlay"></div>
+            <div class="hero-content">
+                <h1>Приватний виконавець</h1>
+                <h2>Палігін Олександр Петрович</h2>
+                <p class="hero-slogan">Цінуємо Ваш час, працюємо на результат</p>
             </div>
         </section>
 
         <!-- Who are Private Bailiffs Section -->
         <section class="private-bailiffs">
             <div class="container">
-                <h2>Хто такі приватні виконавці</h2>
+                <h2 class="bronze-heading">Хто такі приватні виконавці</h2>
                 <div class="expandable-content">
                     <div class="preview-text">
                         <p>Приватним виконавцем може бути громадянин України, який досяг 25 років, має вищу юридичну освіту не нижче другого рівня, володіє державною мовою, має стаж роботи у галузі права після отримання відповідного диплома не менше двох років та склав кваліфікаційний іспит.</p>
                     </div>
-                    <div class="full-text" style="display: none;">
+                    <div class="full-text">
+                        <p>Приватним виконавцем може бути громадянин України, який досяг 25 років, має вищу юридичну освіту не нижче другого рівня, володіє державною мовою, має стаж роботи у галузі права після отримання відповідного диплома не менше двох років та склав кваліфікаційний іспит.</p>
                         <p>Приватним виконавцем не може бути особа:</p>
                         <ol>
                             <li>яка не відповідає вимогам, встановленим частиною першою цієї статті;</li>
@@ -102,25 +84,33 @@
         <!-- Advantages Section -->
         <section class="advantages">
             <div class="container">
-                <h2>Переваги співпраці з приватним виконавцем</h2>
+                <h2 class="bronze-heading">Переваги співпраці з приватним виконавцем</h2>
                 <div class="advantages-grid">
                     <div class="advantage-card">
-                        <div class="advantage-icon">⏰</div>
+                        <div class="advantage-icon">
+                            <img src="assets/images/alarm.png" alt="Alarm" style="width: 4rem; height: 4rem; object-fit: contain;" />
+                        </div>
                         <h3>Своєчасність</h3>
                         <p>Ефективне виконання рішень у встановлені законом строки</p>
                     </div>
                     <div class="advantage-card">
-                        <div class="advantage-icon">⭐</div>
+                        <div class="advantage-icon">
+                            <img src="assets/images/star-outline.png" alt="Star" style="width: 4rem; height: 4rem; object-fit: contain;" />
+                        </div>
                         <h3>Якість</h3>
                         <p>Професійний підхід та високий рівень виконання послуг</p>
                     </div>
                     <div class="advantage-card">
-                        <div class="advantage-icon">🔒</div>
+                        <div class="advantage-icon">
+                            <img src="assets/images/lock-outline.png" alt="Lock" style="width: 4rem; height: 4rem; object-fit: contain;" />
+                        </div>
                         <h3>Конфіденційність</h3>
                         <p>Збереження професійної таємниці та захист персональних даних</p>
                     </div>
                     <div class="advantage-card">
-                        <div class="advantage-icon">⚖️</div>
+                        <div class="advantage-icon">
+                            <img src="assets/images/scale-balance.png" alt="Scale" style="width: 4rem; height: 4rem; object-fit: contain;" />
+                        </div>
                         <h3>Законність</h3>
                         <p>Дотримання всіх норм і вимог чинного законодавства</p>
                     </div>
@@ -131,9 +121,9 @@
         <!-- Registration Data Section -->
         <section class="registration-data">
             <div class="container">
-                <h2>Реєстраційні дані відносно приватного виконавця Палігіна Олександра Петровича</h2>
+                <h2 class="bronze-heading">Реєстраційні дані відносно приватного виконавця Палігіна Олександра Петровича</h2>
                 <div class="registration-info">
-                    <p><strong>Дата внесення до Єдиного реєстрі приватних виконавців</strong> — 12.09.2017;</p>
+                    <p><strong>Дата внесення до Єдиного реєстру приватних виконавців</strong> — 12.09.2017;</p>
                     <p><strong>Дата рішення кваліфікаційної комісії приватних виконавців про надання права на здійснення діяльності приватного виконавця</strong> — 24.05.2017;</p>
                     <p><strong>Посвідчення приватного виконавця</strong> — № 0015 від 01.06.2017;</p>
                     <p><strong>Договір на добровільне страхування цивільно-правової відповідальності приватного виконавця</strong> №ДВО(ПВ) ДВО 012/2022-096/И від 26.07.2022 р. на страхову суму у розмірі 2 000 000 000 (два мільярда) гривень 00 копійок на період з 01.09.2022 до 31.08.2023.</p>
@@ -158,7 +148,7 @@
         <!-- FAQ Section -->
         <section class="faq">
             <div class="container">
-                <h2>Часті запитання</h2>
+                <h2 class="bronze-heading">Часті запитання</h2>
                 <div class="faq-list">
                     <div class="faq-item">
                         <div class="faq-question" onclick="toggleFAQ(this)">
@@ -234,20 +224,7 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/images/logo-small-inverted.png" alt="Логотип">
-                    <span>Приватний виконавець Палігін О.П.</span>
-                </div>
-                <div class="footer-text">
-                    <p>&copy; 2025 Палігін Олександр Петрович. Всі права захищені.</p>
-                    <p>Цінуємо Ваш час, працюємо на результат</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
     <script src="js/script.js"></script>
 </body>

@@ -3,15 +3,20 @@ function toggleContent() {
     const fullText = document.querySelector('.full-text');
     const previewText = document.querySelector('.preview-text');
     const button = document.querySelector('.read-more-btn');
-    
-    if (fullText.style.display === 'none') {
-        fullText.style.display = 'block';
+    const sectionTitle = document.querySelector('.private-bailiffs h2');
+
+    if (!fullText.classList.contains('open')) {
+        fullText.classList.add('open');
         previewText.style.display = 'none';
         button.textContent = 'Згорнути';
     } else {
-        fullText.style.display = 'none';
+        fullText.classList.remove('open');
         previewText.style.display = 'block';
         button.textContent = 'Читати далі';
+        // // Плавная прокрутка к заголовку секции при сворачивании
+        // if (sectionTitle) {
+        //     sectionTitle.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // }
     }
 }
 
@@ -21,12 +26,14 @@ function toggleFAQ(element) {
     const answer = faqItem.querySelector('.faq-answer');
     const toggle = element.querySelector('.faq-toggle');
     
-    if (answer.style.display === 'block') {
-        answer.style.display = 'none';
+    if (answer.classList.contains('open')) {
+        // Close FAQ
+        answer.classList.remove('open');
         toggle.textContent = '+';
         faqItem.classList.remove('active');
     } else {
-        answer.style.display = 'block';
+        // Open FAQ
+        answer.classList.add('open');
         toggle.textContent = '−';
         faqItem.classList.add('active');
     }

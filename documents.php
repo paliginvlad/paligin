@@ -8,154 +8,133 @@
     <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <img src="assets/images/logo.png" alt="Логотип" class="logo">
-                    <span class="nav-title">Палігін Олександр Петрович</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.php" class="nav-link">Головна</a></li>
-                    <li><a href="links.php" class="nav-link">Корисні посилання</a></li>
-                    <li><a href="documents.php" class="nav-link active">Документи</a></li>
-                    <li><a href="publications.php" class="nav-link">Публікації</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <?php include 'includes/header.php'; ?>
 
     <main>
-        <section class="page-header">
-            <div class="container">
+        <section class="page-header" style="background-image: url('assets/images/documents.jpg'); position: relative;">
+            <div class="page-header-orange-overlay"></div>
+            <div class="page-header-overlay"></div>
+            <div class="container" style="position: relative; z-index: 2;">
                 <h1>Документи</h1>
                 <p>Завантажте необхідні документи та форми</p>
             </div>
         </section>
-
         <section class="documents-content">
             <div class="container">
-                <div class="documents-grid">
-                    <div class="document-card">
-                        <div class="document-icon">📄</div>
-                        <h3>Заява про примусове виконання</h3>
-                        <p>Бланк заяви для звернення до приватного виконавця</p>
-                        <div class="document-meta">
-                            <span class="file-type">PDF</span>
-                            <span class="file-size">245 KB</span>
+                <div class="documents-list">
+                    <div class="document-item">
+                        <img src="assets/images/word-icon.png" alt="Document" class="document-icon">
+                        <div class="document-content">
+                            <h3>Заява про визначення рахунку для здійснення видаткових операцій</h3>
+                            <p>Бланк заяви про визначення рахунку для здійснення видаткових операцій</p>
                         </div>
-                        <a href="assets/documents/zajavka.pdf" class="download-btn" download="zajavka.pdf">Завантажити</a>
+                        <a href="assets/documents/Заява про визначення рахунку для здійснення видаткових операцій.docx" class="download-btn" download="Заява про визначення рахунку для здійснення видаткових операцій.docx">Завантажити</a>
                     </div>
 
-                    <div class="document-card">
-                        <div class="document-icon">📋</div>
-                        <h3>Декларація про доходи та майно боржника</h3>
-                        <p>Форма декларації для подання відомостей про майно</p>
-                        <div class="document-meta">
-                            <span class="file-type">DOC</span>
-                            <span class="file-size">89 KB</span>
+                    <div class="document-item">
+                        <img src="assets/images/adobe-acrobat.png" alt="Document" class="document-icon">
+                        <div class="document-content">
+                            <h3>Реквізити для сплати боргу</h3>
+                            <p>Форма реквізитів для сплати боргу</p>
                         </div>
-                        <a href="assets/documents/deklaracija.doc" class="download-btn" download="deklaracija.doc">Завантажити</a>
+                        <a href="assets/documents/blank.pdf" class="download-btn" download="blank.pdf">Завантажити</a>
                     </div>
 
-                    <div class="document-card">
-                        <div class="document-icon">📑</div>
-                        <h3>Довіреність на представництво</h3>
-                        <p>Зразок довіреності для представника у виконавчому провадженні</p>
-                        <div class="document-meta">
-                            <span class="file-type">PDF</span>
-                            <span class="file-size">156 KB</span>
+                    <div class="document-item">
+                        <img src="assets/images/word-icon.png" alt="Document" class="document-icon">
+                        <div class="document-content">
+                            <h3>Декларація про доходи та майно боржника фізичної особи</h3>
+                            <p>Зразок декларації про доходи та майно боржника фізичної особи</p>
                         </div>
-                        <a href="assets/documents/dovirenist.pdf" class="download-btn" download="dovirenist.pdf">Завантажити</a>
+                        <a href="assets/documents/Декларація про доходи та майно боржника фізичної особи.docx" class="download-btn" download="Декларація про доходи та майно боржника фізичної особи.docx">Завантажити</a>
                     </div>
 
-                    <div class="document-card">
-                        <div class="document-icon">📊</div>
-                        <h3>Розрахунок винагороди приватного виконавця</h3>
-                        <p>Таблиця розрахунку розміру винагороди</p>
-                        <div class="document-meta">
-                            <span class="file-type">PDF</span>
-                            <span class="file-size">198 KB</span>
+                    <div class="document-item">
+                        <img src="assets/images/word-icon.png" alt="Document" class="document-icon">
+                        <div class="document-content">
+                            <h3>Декларація про доходи та майно боржника юридичної особи</h3>
+                            <p>Зразок декларації про доходи та майно боржника юридичної особи</p>
                         </div>
-                        <a href="assets/documents/vynagoda.pdf" class="download-btn" download="vynagoda.pdf">Завантажити</a>
+                        <a href="assets/documents/Декларація про доходи та майно боржника юридичної особи.docx" class="download-btn" download="Декларація про доходи та майно боржника юридичної особи.docx">Завантажити</a>
                     </div>
 
-                    <div class="document-card">
-                        <div class="document-icon">📝</div>
-                        <h3>Заява про відстрочку (розстрочку) виконання</h3>
-                        <p>Бланк заяви про відстрочку або розстрочку виконання рішення</p>
-                        <div class="document-meta">
-                            <span class="file-type">DOC</span>
-                            <span class="file-size">76 KB</span>
+                    <div class="document-item">
+                        <img src="assets/images/word-icon.png" alt="Document" class="document-icon">
+                        <div class="document-content">
+                            <h3>Заява на ознайомлення з матеріалами виконавчого провадження</h3>
+                            <p>Бланк заяви на ознайомлення з матеріалами виконавчого провадження</p>
                         </div>
-                        <a href="assets/documents/vidstrochka.doc" class="download-btn" download="vidstrochka.doc">Завантажити</a>
+                        <a href="assets/documents/Заява на ознайомлення з матеріалами ВП.docx" class="download-btn" download="Заява на ознайомлення з матеріалами ВП.docx">Завантажити</a>
                     </div>
 
-                    <div class="document-card">
-                        <div class="document-icon">🔒</div>
-                        <h3>Заява про зняття арешту з майна</h3>
-                        <p>Форма заяви для зняття арешту з майна боржника</p>
-                        <div class="document-meta">
-                            <span class="file-type">PDF</span>
-                            <span class="file-size">134 KB</span>
+                    <div class="document-item">
+                        <img src="assets/images/word-icon.png" alt="Document" class="document-icon">
+                        <div class="document-content">
+                            <h3>Заява про зняття арешту</h3>
+                            <p>Бланк заяви про зняття арешту</p>
                         </div>
-                        <a href="assets/documents/znjattja_areshtu.pdf" class="download-btn" download="znjattja_areshtu.pdf">Завантажити</a>
+                        <a href="assets/documents/Заява про зняття арешту.docx" class="download-btn" download="Заява про зняття арешту.docx">Завантажити</a>
                     </div>
 
-                    <div class="document-card">
-                        <div class="document-icon">💰</div>
-                        <h3>Заява про поворот виконання</h3>
-                        <p>Бланк заяви про поворот виконання рішення</p>
-                        <div class="document-meta">
-                            <span class="file-type">DOC</span>
-                            <span class="file-size">92 KB</span>
+                    <div class="document-item">
+                        <img src="assets/images/word-icon.png" alt="Document" class="document-icon">
+                        <div class="document-content">
+                            <h3>Заява про повернення виконавчого документа стягувачу</h3>
+                            <p>Бланк заяви про повернення виконавчого документа стягувачу</p>
                         </div>
-                        <a href="assets/documents/povorot.doc" class="download-btn" download="povorot.doc">Завантажити</a>
+                        <a href="assets/documents/Заява про повернення виконавчого документа стягувачу.docx" class="download-btn" download="Заява про повернення виконавчого документа стягувачу.docx">Завантажити</a>
                     </div>
 
-                    <div class="document-card">
-                        <div class="document-icon">📞</div>
-                        <h3>Контактна інформація та графік роботи</h3>
-                        <p>Повна контактна інформація та режим роботи офісу</p>
-                        <div class="document-meta">
-                            <span class="file-type">PDF</span>
-                            <span class="file-size">112 KB</span>
+                      <div class="document-item">
+                        <img src="assets/images/word-icon.png" alt="Document" class="document-icon">
+                        <div class="document-content">
+                            <h3>Заява про примусове виконання рішення</h3>
+                            <p>Бланк заяви про примусове виконання рішення</p>
                         </div>
-                        <a href="assets/documents/kontakty.pdf" class="download-btn" download="kontakty.pdf">Завантажити</a>
+                        <a href="assets/documents/Заява про примусове виконання рішення.docx" class="download-btn" download="Заява про примусове виконання рішення.docx">Завантажити</a>
                     </div>
-                </div>
 
-                <div class="info-block">
-                    <h2>Важлива інформація</h2>
-                    <div class="info-content">
-                        <p><strong>Увага!</strong> Всі документи повинні бути заповнені українською мовою та містити достовірну інформацію.</p>
-                        <p>Для заповнення документів рекомендується використовувати останні версії форм, представлені на цій сторінці.</p>
-                        <p>У разі виникнення питань щодо заповнення документів, звертайтеся за консультацією до приватного виконавця.</p>
+                       <div class="document-item">
+                        <img src="assets/images/word-icon.png" alt="Document" class="document-icon">
+                        <div class="document-content">
+                            <h3>Заява про звернення стягнення на кошти</h3>
+                            <p>Бланк заяви про звернення стягнення на кошти</p>
+                        </div>
+                        <a href="assets/documents/Заява про звернення стягнення на кошти.docx" class="download-btn" download="Заява про звернення стягнення на кошти.docx">Завантажити</a>
+                    </div>
+
+                     <div class="document-item">
+                        <img src="assets/images/word-icon.png" alt="Document" class="document-icon">
+                        <div class="document-content">
+                            <h3>Заява про перерахування стягнутих коштів</h3>
+                            <p>Бланк заяви про перерахування стягнутих коштів</p>
+                        </div>
+                        <a href="assets/documents/Заява про перерахування стягнутих коштів.docx" class="download-btn" download="Заява про перерахування стягнутих коштів.docx">Завантажити</a>
+                    </div>
+
+                     <div class="document-item">
+                        <img src="assets/images/word-icon.png" alt="Document" class="document-icon">
+                        <div class="document-content">
+                            <h3>Заява про повернення стягнутих коштів (рішення скасовано)</h3>
+                            <p>Бланк заяви про повернення стягнутих коштів (рішення скасовано)</p>
+                        </div>
+                        <a href="assets/documents/Заява про повернення стягнутих коштів (рішення скасовано).docx" class="download-btn" download="Заява про повернення стягнутих коштів (рішення скасовано).docx">Завантажити</a>
+                    </div>
+
+                     <div class="document-item">
+                        <img src="assets/images/word-icon.png" alt="Document" class="document-icon">
+                        <div class="document-content">
+                            <h3>Заява про повернення стягнутих коштів (фактично)</h3>
+                            <p>Бланк заяви про повернення стягнутих коштів (фактично)</p>
+                        </div>
+                        <a href="assets/documents/Заява про повернення стягнутих коштів (фактично).docx" class="download-btn" download="Заява про повернення стягнутих коштів (фактично).docx">Завантажити</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/images/logo-small-inverted.png" alt="Логотип">
-                    <span>Приватний виконавець Палігін О.П.</span>
-                </div>
-                <div class="footer-text">
-                    <p>&copy; 2025 Палігін Олександр Петрович. Всі права захищені.</p>
-                    <p>Цінуємо Ваш час, працюємо на результат</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
     <script src="js/script.js"></script>
 </body>
